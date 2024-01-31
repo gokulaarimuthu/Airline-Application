@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#271753"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#271753"
+        tools:context=".Register">
+
+        <TextView
+            android:id="@+id/register_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#DCA173"
+            android:padding="5dp"
+            android:text="Enter the Details for Register"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/fname"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/radius"
+            android:backgroundTint="#2C9DCF"
+            android:drawableStart="@drawable/ic_baseline_person"
+            android:drawablePadding="6dp"
+            android:drawingCacheQuality="high"
+            android:ems="10"
+            android:hint="First Name"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColor="?android:textColorPrimary"
+            android:textColorHighlight="#DC8348"
+            android:textColorHint="#FFFFFF"
+            android:textColorLink="#E88645"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.09"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/register_details" />
+
+        <EditText
+            android:id="@+id/lname"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/radius"
+            android:backgroundTint="#2C9DCF"
+            android:drawablePadding="6dp"
+            android:ems="10"
+            android:hint="Last Name"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColor="?android:textColorPrimary"
+            android:textColorHint="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.91"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/register_details" />
+
+        <EditText
+            android:id="@+id/mail"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/radius"
+            android:backgroundTint="#2C9DCF"
+            android:drawableStart="@drawable/ic_baseline_email"
+            android:drawablePadding="6dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textColor="?android:textColorPrimary"
+            android:textColorHint="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fname" />
+
+
+        <EditText
+            android:id="@+id/dob"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/radius"
+            android:backgroundTint="#2C9DCF"
+            android:drawablePadding="6dp"
+            android:ems="10"
+            android:hint="Date of Birth"
+            android:inputType="date"
+            android:padding="10dp"
+            android:textColor="?android:textColorPrimary"
+            android:textColorHint="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.09"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gender" />
+
+        <RadioGroup
+            android:id="@+id/gender"
+            android:layout_width="253dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:textColor="?android:textColorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pass">
+
+            <RadioButton
+                android:id="@+id/m"
+                android:layout_width="78dp"
+                android:layout_height="wrap_content"
+                android:buttonTint="#E88645"
+                android:text="Male"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/f"
+                android:layout_width="wrap_content"
+                android:layout_height="46dp"
+                android:buttonTint="#E88645"
+                android:text="Female"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/o"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#E88645"
+                android:text="Other"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#34CA81"
+            android:hint="Register"
+            android:text="Register"
+            android:textAlignment="center"
+            android:textColor="?android:textColorPrimary"
+            android:textColorHint="#FFFDFD"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/agree"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/agree"
+            android:layout_width="239dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:buttonTint="#E88645"
+            android:checked="false"
+            android:text="Agree ? Privacy and Policy"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.19"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/contact" />
+
+        <Button
+            android:id="@+id/sd"
+            android:layout_width="51dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/ic_baseline_date_range"
+            android:backgroundTint="@color/teal_700"
+            android:backgroundTintMode="add"
+            android:drawableStart="@drawable/ic_baseline_date_range"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="14sp"
+            app:iconTint="#3A2323"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.568"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gender"
+            app:rippleColor="#BD6B6B"
+            app:strokeColor="#852F2F" />
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="303dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/radius"
+            android:backgroundTint="#2C9DCF"
+            android:drawableStart="@drawable/ic_lock"
+            android:drawablePadding="6dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColor="?android:textColorPrimary"
+            android:textColorHint="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mail" />
+
+        <EditText
+            android:id="@+id/contact"
+            android:layout_width="301dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/radius"
+            android:backgroundTint="#2C9DCF"
+            android:drawableStart="@drawable/ic_baseline_phone"
+            android:drawablePadding="6dp"
+            android:ems="10"
+            android:hint="Mobile No"
+            android:inputType="phone"
+            android:padding="10dp"
+            android:textColor="?android:textColorPrimary"
+            android:textColorHint="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dob" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

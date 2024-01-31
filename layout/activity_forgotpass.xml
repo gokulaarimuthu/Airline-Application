@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"
+        tools:context=".Forgotpass">
+
+        <TextView
+            android:id="@+id/forgot_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#DCA173"
+            android:padding="5dp"
+            android:text="Enter the Details to Update Password"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/fnamep"
+            android:layout_width="146dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/radius"
+            android:backgroundTint="#83C0DC"
+            android:drawableStart="@drawable/ic_baseline_person"
+            android:drawablePadding="6dp"
+            android:ems="10"
+            android:hint="First Name"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColor="?android:textColorPrimary"
+            android:textColorHighlight="#DC8348"
+            android:textColorHint="#292626"
+            android:textColorLink="#E88645"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.09"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/forgot_details" />
+
+        <EditText
+            android:id="@+id/lnamep"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/radius"
+            android:backgroundTint="#83C0DC"
+            android:drawablePadding="6dp"
+            android:ems="10"
+            android:hint="Last Name"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColor="?android:textColorPrimary"
+            android:textColorHint="#292626"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.91"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/forgot_details" />
+
+        <EditText
+            android:id="@+id/mailp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/radius"
+            android:backgroundTint="#83C0DC"
+            android:drawableStart="@drawable/ic_baseline_email"
+            android:drawablePadding="6dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textColor="?android:textColorPrimary"
+            android:textColorHint="#292626"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fnamep" />
+
+        <EditText
+            android:id="@+id/passp"
+            android:layout_width="303dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/radius"
+            android:backgroundTint="#83C0DC"
+            android:drawableStart="@drawable/ic_lock"
+            android:drawablePadding="6dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColor="?android:textColorPrimary"
+            android:textColorHint="#292626"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mailp" />
+
+
+        <EditText
+            android:id="@+id/confpassp"
+            android:layout_width="303dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/radius"
+            android:backgroundTint="#83C0DC"
+            android:drawableStart="@drawable/ic_lock"
+            android:drawablePadding="6dp"
+            android:ems="10"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColor="?android:textColorPrimary"
+            android:textColorHint="#292626"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.485"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passp" />
+
+        <Button
+            android:id="@+id/update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="92dp"
+            android:backgroundTint="#34CA81"
+            android:hint="Login"
+            android:text="UPDATE"
+            android:textAlignment="center"
+            android:textColor="?android:textColorPrimary"
+            android:textColorHint="#FFFDFD"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passp" />
+
+        <TextView
+            android:id="@+id/relogtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:background="#40C4FF"
+            android:padding="5dp"
+            android:text="Login ? Please"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#221D1D"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/update" />
+
+        <TextView
+            android:id="@+id/relogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bookingradius"
+            android:backgroundTint="#40C4FF"
+            android:padding="5dp"
+            android:text="Click Here"
+            android:textAlignment="center"
+            android:textColor="#C54C4C"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relogtext" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,732 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="0dp"
+    tools:context=".ui.home.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/hf"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout7">
+
+
+                <androidx.gridlayout.widget.GridLayout
+                    android:id="@+id/gridLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FAF4DD"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+                    <ImageView
+                        android:id="@+id/imageView777"
+                        android:layout_width="170dp"
+                        android:layout_height="142dp"
+                        android:layout_marginRight="10dp"
+                        android:scaleType="fitCenter"
+                        app:layout_column="1"
+                        app:layout_row="0"
+                        app:srcCompat="@drawable/confidencequare" />
+
+                    <ImageView
+                        android:id="@+id/imageView888"
+                        android:layout_width="170dp"
+                        android:layout_height="142dp"
+                        android:scaleType="centerCrop"
+                        app:layout_column="0"
+                        app:layout_row="0"
+                        app:srcCompat="@drawable/allin" />
+
+                    <TextView
+                        android:id="@+id/textView1555"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="All in one"
+                        android:textAlignment="center"
+                        android:textColor="#191818"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_column="0"
+                        app:layout_row="1" />
+
+                    <TextView
+                        android:id="@+id/textView1666"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="Search all travel deals in one go"
+                        android:textAlignment="center"
+                        android:textColor="#191818"
+                        android:textSize="16sp"
+                        app:layout_column="0"
+                        app:layout_row="2" />
+
+                    <TextView
+                        android:id="@+id/textView1777"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:text="Book with confidence"
+                        android:textAlignment="center"
+                        android:textColor="#191818"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_column="1"
+                        app:layout_row="1" />
+
+                    <TextView
+                        android:id="@+id/textView1888"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:text="No hidden fees, taxes or other nassty surprises"
+                        android:textAlignment="center"
+                        android:textColor="#191818"
+                        android:textSize="16sp"
+                        app:layout_column="1"
+                        app:layout_row="2" />
+
+                    <ImageView
+                        android:id="@+id/imageView999"
+                        android:layout_width="170dp"
+                        android:layout_height="142dp"
+                        android:layout_marginTop="15dp"
+                        android:scaleType="centerCrop"
+                        app:layout_column="0"
+                        app:layout_row="3"
+                        app:srcCompat="@drawable/paydownload" />
+
+                    <TextView
+                        android:id="@+id/textView1999"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:text="Pay the way you want"
+                        android:textAlignment="center"
+                        android:textColor="#191818"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_column="0"
+                        app:layout_row="4" />
+
+                    <TextView
+                        android:id="@+id/textView2000"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:text="See only sellers who support your preferred payment methods"
+                        android:textAlignment="center"
+                        android:textColor="#191818"
+                        android:textSize="16sp"
+                        app:layout_column="0"
+                        app:layout_row="5" />
+
+                    <ImageView
+                        android:id="@+id/imageView1000"
+                        android:layout_width="170dp"
+                        android:layout_height="142dp"
+                        android:layout_marginTop="15dp"
+                        android:scaleType="centerCrop"
+                        app:layout_column="1"
+                        app:layout_row="3"
+                        app:srcCompat="@drawable/instantimages" />
+
+                    <TextView
+                        android:id="@+id/textView2111"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:text="Instant booking"
+                        android:textAlignment="center"
+                        android:textColor="#191818"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_column="1"
+                        app:layout_row="4" />
+
+                    <TextView
+                        android:id="@+id/textView2222"
+                        android:layout_width="176dp"
+                        android:layout_height="wrap_content"
+                        android:text="For selected members book with just a couple of click"
+                        android:textAlignment="center"
+                        android:textColor="#191818"
+                        android:textSize="16sp"
+                        app:layout_column="1"
+                        app:layout_row="5" />
+                </androidx.gridlayout.widget.GridLayout>
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#ACD6C2"
+                    android:text="Specialities"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="#191818"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.058"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout4">
+
+                <androidx.gridlayout.widget.GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:background="#FAF4DD"
+                    android:padding="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView7">
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="170dp"
+                        android:layout_height="142dp"
+                        android:layout_marginRight="10dp"
+                        android:scaleType="centerCrop"
+                        app:layout_column="1"
+                        app:layout_row="0"
+                        app:srcCompat="@drawable/bangalore" />
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="170dp"
+                        android:layout_height="142dp"
+                        android:scaleType="centerCrop"
+                        app:layout_column="0"
+                        app:layout_row="0"
+                        app:srcCompat="@drawable/chn" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="Chennai"
+                        android:textAlignment="center"
+                        android:textColor="#191818"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_column="0"
+                        app:layout_row="1" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/place1"
+                        android:textAlignment="center"
+                        android:textColor="#191818"
+                        android:textSize="16sp"
+                        app:layout_column="0"
+                        app:layout_row="2" />
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:text="Bangalore"
+                        android:textAlignment="center"
+                        android:textColor="#191818"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_column="1"
+                        app:layout_row="1" />
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/place2"
+                        android:textAlignment="center"
+                        android:textColor="#191818"
+                        android:textSize="16sp"
+                        app:layout_column="1"
+                        app:layout_row="2" />
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="170dp"
+                        android:layout_height="142dp"
+                        android:layout_marginTop="15dp"
+                        android:scaleType="centerCrop"
+                        app:layout_column="0"
+                        app:layout_row="3"
+                        app:srcCompat="@drawable/mumbai" />
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:text="Mumbai"
+                        android:textAlignment="center"
+                        android:textColor="#191818"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_column="0"
+                        app:layout_row="4" />
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/place3"
+                        android:textAlignment="center"
+                        android:textColor="#191818"
+                        android:textSize="16sp"
+                        app:layout_column="0"
+                        app:layout_row="5" />
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="170dp"
+                        android:layout_height="142dp"
+                        android:layout_marginTop="15dp"
+                        android:scaleType="centerCrop"
+                        app:layout_column="1"
+                        app:layout_row="3"
+                        app:srcCompat="@drawable/hydera" />
+
+                    <TextView
+                        android:id="@+id/textView21"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:text="Hyderabad"
+                        android:textAlignment="center"
+                        android:textColor="#191818"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_column="1"
+                        app:layout_row="4" />
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/place4"
+                        android:textAlignment="center"
+                        android:textColor="#191818"
+                        android:textSize="16sp"
+                        app:layout_column="1"
+                        app:layout_row="5" />
+                </androidx.gridlayout.widget.GridLayout>
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:background="#ACD6C2"
+                    android:padding="2dp"
+                    android:text="popular destinations"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="#191818"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.099"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <!--
+                <com.airbnb.lottie.LottieAnimationView
+                    android:layout_width="98dp"
+                    android:layout_height="104dp"
+                    android:layout_marginBottom="55dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.949"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/airplanepreloader" />
+                    -->
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/gifImageView2"
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/rocplaincolor"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"></pl.droidsonroids.gif.GifImageView>
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="EJ Airlines"
+                    android:textAlignment="center"
+                    android:textColor="#191818"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/gifImageView2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.289" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E4D6D6"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout10"
+                app:layout_constraintVertical_bias="0.0">
+
+                <TextView
+                    android:id="@+id/foot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:padding="12dp"
+                    android:text="@string/foot"
+                    android:textColor="#252424"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <ImageView
+                    android:id="@+id/insta1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="10dp"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.42"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/foot"
+                    app:srcCompat="@drawable/img19" />
+
+                <ImageButton
+                    android:id="@+id/utube1"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="4dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img40"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.59"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/foot" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout6">
+
+
+                <androidx.gridlayout.widget.GridLayout
+                    android:id="@+id/gridLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:background="#FAF4DD"
+                    android:padding="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+                    <ImageView
+                        android:id="@+id/imageView77"
+                        android:layout_width="170dp"
+                        android:layout_height="142dp"
+                        android:layout_marginRight="10dp"
+                        android:scaleType="centerCrop"
+                        app:layout_column="1"
+                        app:layout_row="0"
+                        app:srcCompat="@drawable/travel" />
+
+                    <ImageView
+                        android:id="@+id/imageView88"
+                        android:layout_width="170dp"
+                        android:layout_height="142dp"
+                        android:scaleType="centerCrop"
+                        app:layout_column="0"
+                        app:layout_row="0"
+                        app:srcCompat="@drawable/emirates" />
+
+                    <TextView
+                        android:id="@+id/textView155"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="EJ Airlines Blog"
+                        android:textAlignment="center"
+                        android:textColor="#191818"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_column="0"
+                        app:layout_row="1" />
+
+                    <TextView
+                        android:id="@+id/textView166"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="Emirates Resume Flight Operations to Italy...."
+                        android:textAlignment="center"
+                        android:textColor="#191818"
+                        android:textSize="16sp"
+                        app:layout_column="0"
+                        app:layout_row="2" />
+
+                    <TextView
+                        android:id="@+id/textView177"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:text="EJ Airlines Blog"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="#191818"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_column="1"
+                        app:layout_row="1" />
+
+                    <TextView
+                        android:id="@+id/textView188"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:text="Travel Without Restrictions in 2022...."
+                        android:textAlignment="center"
+                        android:textColor="#191818"
+                        android:textSize="16sp"
+                        app:layout_column="1"
+                        app:layout_row="2" />
+
+                </androidx.gridlayout.widget.GridLayout>
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="#ACD6C2"
+                    android:text="STORIES"
+                    android:textAlignment="center"
+                    android:textColor="#191818"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.055"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="#0C538E"
+                app:layout_constraintBottom_toTopOf="@+id/constraintLayout4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+                <TextView
+                    android:id="@+id/welcome"
+                    android:layout_width="239dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/welcome"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout10"
+                android:layout_width="match_parent"
+                android:layout_height="247dp"
+                android:background="#0C538E"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout8">
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:text="subscribe form"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.049"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName"
+                    android:layout_width="248dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="36dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="120dp"
+                    android:background="@drawable/radius"
+                    android:backgroundTint="#5AB5DD"
+                    android:drawableStart="@drawable/ic_baseline_person"
+                    android:drawablePadding="5dp"
+                    android:ems="10"
+                    android:hint="Name"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:textColorHint="#FFFFFF"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.281"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+                <EditText
+                    android:id="@+id/editTextTextEmailAddress"
+                    android:layout_width="248dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/radius"
+                    android:backgroundTint="#5AB5DD"
+                    android:drawableStart="@drawable/ic_baseline_email"
+                    android:drawablePadding="5dp"
+                    android:ems="10"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:textColorHint="#FDFAFA"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.22"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+                <Button
+                    android:id="@+id/button8"
+                    android:layout_width="125dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="12dp"
+                    android:backgroundTint="#34CA81"
+                    android:text="SUBMIT"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.35"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="1dp"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout9"
+                tools:layout_editor_absoluteX="1dp">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img51"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
