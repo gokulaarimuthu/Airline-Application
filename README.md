@@ -31,7 +31,7 @@ Welcome to the Airline Reservation Application repository! This Android applicat
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/AirlineReservationApp.git
+   git clone https://github.com/gokulaarimuthu/Airline-Application.git
    ```
 
 2. **Open in Android Studio:**
